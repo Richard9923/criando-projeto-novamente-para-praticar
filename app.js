@@ -12,7 +12,7 @@ function rodarPrograma(input) {
     console.log(`Tarefa adicionada: ${tarefa}`);
   } else if (input == "list") {
     tarefas.map((tarefa) => {
-      console.log(`${indexOf(tarefa)}: ${tarefa}`);
+      console.log(`${tarefas.indexOf(tarefa)}: ${tarefa}`);
     });
   } else if (input == "delete") {
     let index = prompt("Qual o index da tarefa que você quer deletar? ");
