@@ -15,9 +15,11 @@ function rodarPrograma(input) {
       console.log(`${tarefas.indexOf(tarefa)}: ${tarefa}`);
     });
   } else if (input == "delete") {
-    let index = prompt("Qual o index da tarefa que você quer deletar? ");
+    let index = parseInt(
+      prompt("Qual o index da tarefa que você quer deletar? ")
+    );
     console.log(`Tarefa ${tarefas[index]} deletada.`);
-    tarefas.splice(`${index}, 1`);
+    tarefas.splice(index, 1);
   } else if (input == "quit") {
     programOn = false;
     console.log("Programa encerrado.");
