@@ -13,9 +13,8 @@ for (caracter in word) {
 let vidas = 6;
 let palavrasTentadas = "";
 let programaOn = true;
-
-console.log(`Palavra secreta: ${display}.`);
 console.log(`Suas vidas: ${vidas}.`);
+console.log(`Palavra secreta: ${display}.`);
 while (programaOn == true) {
   let jogadorEscolha = prompt(
     "Tente adivinhar a palavra escolhendo uma letra."
